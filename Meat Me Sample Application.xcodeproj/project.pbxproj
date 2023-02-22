@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A626F44829A6372300DE0D62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A626F44729A6372300DE0D62 /* AppDelegate.swift */; };
+		A626F44A29A6372300DE0D62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A626F44929A6372300DE0D62 /* SceneDelegate.swift */; };
+		A626F44C29A6372300DE0D62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A626F44B29A6372300DE0D62 /* ViewController.swift */; };
+		A626F44F29A6372300DE0D62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A626F44D29A6372300DE0D62 /* Main.storyboard */; };
+		A626F45129A6372400DE0D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A626F45029A6372400DE0D62 /* Assets.xcassets */; };
+		A626F45429A6372400DE0D62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A626F45229A6372400DE0D62 /* LaunchScreen.storyboard */; };
+		A626F45F29A6372400DE0D62 /* Meat_Me_Sample_ApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A626F45E29A6372400DE0D62 /* Meat_Me_Sample_ApplicationTests.swift */; };
+		A626F46929A6372400DE0D62 /* Meat_Me_Sample_ApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A626F46829A6372400DE0D62 /* Meat_Me_Sample_ApplicationUITests.swift */; };
+		A626F46B29A6372400DE0D62 /* Meat_Me_Sample_ApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A626F46A29A6372400DE0D62 /* Meat_Me_Sample_ApplicationUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A626F45B29A6372400DE0D62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A626F43C29A6372300DE0D62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A626F44329A6372300DE0D62;
+			remoteInfo = "Meat Me Sample Application";
+		};
+		A626F46529A6372400DE0D62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A626F43C29A6372300DE0D62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A626F44329A6372300DE0D62;
+			remoteInfo = "Meat Me Sample Application";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A626F44429A6372300DE0D62 /* Meat Me Sample Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meat Me Sample Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A626F44729A6372300DE0D62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A626F44929A6372300DE0D62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A626F44B29A6372300DE0D62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A626F44E29A6372300DE0D62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A626F45029A6372400DE0D62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A626F45329A6372400DE0D62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A626F45529A6372400DE0D62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A626F45A29A6372400DE0D62 /* Meat Me Sample ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meat Me Sample ApplicationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A626F45E29A6372400DE0D62 /* Meat_Me_Sample_ApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meat_Me_Sample_ApplicationTests.swift; sourceTree = "<group>"; };
+		A626F46429A6372400DE0D62 /* Meat Me Sample ApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meat Me Sample ApplicationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A626F46829A6372400DE0D62 /* Meat_Me_Sample_ApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meat_Me_Sample_ApplicationUITests.swift; sourceTree = "<group>"; };
+		A626F46A29A6372400DE0D62 /* Meat_Me_Sample_ApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meat_Me_Sample_ApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A626F44129A6372300DE0D62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A626F45729A6372400DE0D62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A626F46129A6372400DE0D62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A626F43B29A6372300DE0D62 = {
+			isa = PBXGroup;
+			children = (
+				A626F44629A6372300DE0D62 /* Meat Me Sample Application */,
+				A626F45D29A6372400DE0D62 /* Meat Me Sample ApplicationTests */,
+				A626F46729A6372400DE0D62 /* Meat Me Sample ApplicationUITests */,
+				A626F44529A6372300DE0D62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A626F44529A6372300DE0D62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A626F44429A6372300DE0D62 /* Meat Me Sample Application.app */,
+				A626F45A29A6372400DE0D62 /* Meat Me Sample ApplicationTests.xctest */,
+				A626F46429A6372400DE0D62 /* Meat Me Sample ApplicationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A626F44629A6372300DE0D62 /* Meat Me Sample Application */ = {
+			isa = PBXGroup;
+			children = (
+				A626F44729A6372300DE0D62 /* AppDelegate.swift */,
+				A626F44929A6372300DE0D62 /* SceneDelegate.swift */,
+				A626F44B29A6372300DE0D62 /* ViewController.swift */,
+				A626F44D29A6372300DE0D62 /* Main.storyboard */,
+				A626F45029A6372400DE0D62 /* Assets.xcassets */,
+				A626F45229A6372400DE0D62 /* LaunchScreen.storyboard */,
+				A626F45529A6372400DE0D62 /* Info.plist */,
+			);
+			path = "Meat Me Sample Application";
+			sourceTree = "<group>";
+		};
+		A626F45D29A6372400DE0D62 /* Meat Me Sample ApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				A626F45E29A6372400DE0D62 /* Meat_Me_Sample_ApplicationTests.swift */,
+			);
+			path = "Meat Me Sample ApplicationTests";
+			sourceTree = "<group>";
+		};
+		A626F46729A6372400DE0D62 /* Meat Me Sample ApplicationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A626F46829A6372400DE0D62 /* Meat_Me_Sample_ApplicationUITests.swift */,
+				A626F46A29A6372400DE0D62 /* Meat_Me_Sample_ApplicationUITestsLaunchTests.swift */,
+			);
+			path = "Meat Me Sample ApplicationUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A626F44329A6372300DE0D62 /* Meat Me Sample Application */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A626F46E29A6372400DE0D62 /* Build configuration list for PBXNativeTarget "Meat Me Sample Application" */;
+			buildPhases = (
+				A626F44029A6372300DE0D62 /* Sources */,
+				A626F44129A6372300DE0D62 /* Frameworks */,
+				A626F44229A6372300DE0D62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Meat Me Sample Application";
+			productName = "Meat Me Sample Application";
+			productReference = A626F44429A6372300DE0D62 /* Meat Me Sample Application.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A626F45929A6372400DE0D62 /* Meat Me Sample ApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A626F47129A6372400DE0D62 /* Build configuration list for PBXNativeTarget "Meat Me Sample ApplicationTests" */;
+			buildPhases = (
+				A626F45629A6372400DE0D62 /* Sources */,
+				A626F45729A6372400DE0D62 /* Frameworks */,
+				A626F45829A6372400DE0D62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A626F45C29A6372400DE0D62 /* PBXTargetDependency */,
+			);
+			name = "Meat Me Sample ApplicationTests";
+			productName = "Meat Me Sample ApplicationTests";
+			productReference = A626F45A29A6372400DE0D62 /* Meat Me Sample ApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A626F46329A6372400DE0D62 /* Meat Me Sample ApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A626F47429A6372400DE0D62 /* Build configuration list for PBXNativeTarget "Meat Me Sample ApplicationUITests" */;
+			buildPhases = (
+				A626F46029A6372400DE0D62 /* Sources */,
+				A626F46129A6372400DE0D62 /* Frameworks */,
+				A626F46229A6372400DE0D62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A626F46629A6372400DE0D62 /* PBXTargetDependency */,
+			);
+			name = "Meat Me Sample ApplicationUITests";
+			productName = "Meat Me Sample ApplicationUITests";
+			productReference = A626F46429A6372400DE0D62 /* Meat Me Sample ApplicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A626F43C29A6372300DE0D62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					A626F44329A6372300DE0D62 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					A626F45929A6372400DE0D62 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A626F44329A6372300DE0D62;
+					};
+					A626F46329A6372400DE0D62 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A626F44329A6372300DE0D62;
+					};
+				};
+			};
+			buildConfigurationList = A626F43F29A6372300DE0D62 /* Build configuration list for PBXProject "Meat Me Sample Application" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A626F43B29A6372300DE0D62;
+			productRefGroup = A626F44529A6372300DE0D62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A626F44329A6372300DE0D62 /* Meat Me Sample Application */,
+				A626F45929A6372400DE0D62 /* Meat Me Sample ApplicationTests */,
+				A626F46329A6372400DE0D62 /* Meat Me Sample ApplicationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A626F44229A6372300DE0D62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A626F45429A6372400DE0D62 /* LaunchScreen.storyboard in Resources */,
+				A626F45129A6372400DE0D62 /* Assets.xcassets in Resources */,
+				A626F44F29A6372300DE0D62 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A626F45829A6372400DE0D62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A626F46229A6372400DE0D62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A626F44029A6372300DE0D62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A626F44C29A6372300DE0D62 /* ViewController.swift in Sources */,
+				A626F44829A6372300DE0D62 /* AppDelegate.swift in Sources */,
+				A626F44A29A6372300DE0D62 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A626F45629A6372400DE0D62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A626F45F29A6372400DE0D62 /* Meat_Me_Sample_ApplicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A626F46029A6372400DE0D62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A626F46B29A6372400DE0D62 /* Meat_Me_Sample_ApplicationUITestsLaunchTests.swift in Sources */,
+				A626F46929A6372400DE0D62 /* Meat_Me_Sample_ApplicationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A626F45C29A6372400DE0D62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A626F44329A6372300DE0D62 /* Meat Me Sample Application */;
+			targetProxy = A626F45B29A6372400DE0D62 /* PBXContainerItemProxy */;
+		};
+		A626F46629A6372400DE0D62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A626F44329A6372300DE0D62 /* Meat Me Sample Application */;
+			targetProxy = A626F46529A6372400DE0D62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A626F44D29A6372300DE0D62 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A626F44E29A6372300DE0D62 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A626F45229A6372400DE0D62 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A626F45329A6372400DE0D62 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A626F46C29A6372400DE0D62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A626F46D29A6372400DE0D62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A626F46F29A6372400DE0D62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 233M37R7LR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Meat Me Sample Application/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bigohtech.Meat-Me-Sample-Application";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A626F47029A6372400DE0D62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 233M37R7LR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Meat Me Sample Application/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bigohtech.Meat-Me-Sample-Application";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A626F47229A6372400DE0D62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 233M37R7LR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bigohtech.Meat-Me-Sample-ApplicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meat Me Sample Application.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Meat Me Sample Application";
+			};
+			name = Debug;
+		};
+		A626F47329A6372400DE0D62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 233M37R7LR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bigohtech.Meat-Me-Sample-ApplicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meat Me Sample Application.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Meat Me Sample Application";
+			};
+			name = Release;
+		};
+		A626F47529A6372400DE0D62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 233M37R7LR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bigohtech.Meat-Me-Sample-ApplicationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Meat Me Sample Application";
+			};
+			name = Debug;
+		};
+		A626F47629A6372400DE0D62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 233M37R7LR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bigohtech.Meat-Me-Sample-ApplicationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Meat Me Sample Application";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A626F43F29A6372300DE0D62 /* Build configuration list for PBXProject "Meat Me Sample Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A626F46C29A6372400DE0D62 /* Debug */,
+				A626F46D29A6372400DE0D62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A626F46E29A6372400DE0D62 /* Build configuration list for PBXNativeTarget "Meat Me Sample Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A626F46F29A6372400DE0D62 /* Debug */,
+				A626F47029A6372400DE0D62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A626F47129A6372400DE0D62 /* Build configuration list for PBXNativeTarget "Meat Me Sample ApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A626F47229A6372400DE0D62 /* Debug */,
+				A626F47329A6372400DE0D62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A626F47429A6372400DE0D62 /* Build configuration list for PBXNativeTarget "Meat Me Sample ApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A626F47529A6372400DE0D62 /* Debug */,
+				A626F47629A6372400DE0D62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A626F43C29A6372300DE0D62 /* Project object */;
+}
