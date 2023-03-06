@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Oswald-VariableFont_wght.ttf">
+            <string>Oswald-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="407" id="KGk-i7-Jjw" customClass="ProductsCollectionTVC" customModule="Meat_Me_Sample_Application" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="407"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="428" height="407"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2BC-mM-bLc">
+                        <rect key="frame" x="0.0" y="68" width="428" height="338"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="338" id="Nx7-nR-Ezt"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nvl-u9-Qov">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESCONGELA SÓLO LO QUE NECESITAS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heD-rm-6ms">
+                        <rect key="frame" x="20" y="24" width="211.33333333333334" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="yWl-1H-VSd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Oswald-SemiBold" family="Oswald" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qI-2u-23S">
+                        <rect key="frame" x="336" y="27" width="72" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="OAF-3F-x9r"/>
+                            <constraint firstAttribute="width" constant="72" id="eza-Yh-Zpv"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="See More">
+                            <fontDescription key="titleFontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="10"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="2BC-mM-bLc" secondAttribute="trailing" id="0Yu-W8-Uw5"/>
+                    <constraint firstItem="2BC-mM-bLc" firstAttribute="top" secondItem="0qI-2u-23S" secondAttribute="bottom" constant="27" id="5CK-m7-opL"/>
+                    <constraint firstAttribute="bottom" secondItem="2BC-mM-bLc" secondAttribute="bottom" id="OPs-GH-6wA"/>
+                    <constraint firstItem="heD-rm-6ms" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="PvS-Dt-oid"/>
+                    <constraint firstItem="heD-rm-6ms" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="iDa-w6-7ft"/>
+                    <constraint firstAttribute="trailing" secondItem="0qI-2u-23S" secondAttribute="trailing" constant="20" id="nyH-F3-6M6"/>
+                    <constraint firstItem="0qI-2u-23S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="27" id="pGk-5H-ElV"/>
+                    <constraint firstItem="2BC-mM-bLc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ubl-hg-VtY"/>
+                    <constraint firstItem="2BC-mM-bLc" firstAttribute="top" secondItem="heD-rm-6ms" secondAttribute="bottom" constant="24" id="yeV-ir-8FL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="productLabel" destination="heD-rm-6ms" id="u2U-eQ-eyQ"/>
+                <outlet property="productsCollection" destination="2BC-mM-bLc" id="NdH-jj-kbT"/>
+                <outlet property="seeMoreButton" destination="0qI-2u-23S" id="LHc-Uk-ZPD"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="125.70422535211269"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

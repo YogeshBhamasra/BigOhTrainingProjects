@@ -1,0 +1,47 @@
+/* 
+  Localizable.strings
+  Meat Me Sample Application
+
+  Created by Yogesh Rao on 22/02/23.
+  
+*/
+
+//MARK: - Onboarding CVC Text
+"onboardingCVC/titleLable_1" = "ORDENA FÁCIL Y RÁPIDO";
+"onboardingCVC/titleLable_2" = "ESCANEA PARA OBTENER \nDELICIOSAS RECETAS";
+"onboardingCVC/titleLable_3" = "REORDENA";
+
+"onboardingCVC/bodyLable_1" = "¡Bienvenido a Wild Fork®! Comprar \nnuestros productos nunca fue \ntan fácil. Disfruta de una experiencia \npersonalizada y re-ordena tus \nfavoritos más rápido.";
+"onboardingCVC/bodyLable_2" = "Encuentra los códigos QR en nuestras \ntiendas, escanéalos y obtén la receta \nmás reciente de nuestro Chef Wild Fork.";
+"onboardingCVC/bodyLable_3" = "Reordena tus cortes favoritos o tus \nproductos del día a día.";
+
+//MARK: - Onboarding UIVC Text
+"onboardingUIVC/nextButton/titleText" = "SALTAR";
+
+"onboardingUIVC/skipButton/titleText1" = "SIGUIENTE";
+"onboardingUIVC/skipButton/titleText2" = "EMPEZAR";
+
+//MARK: - Zipcode VC Text
+"zipCodeVC/titleLabel1" = "ENCUENTRA TU CÓDIGO POSTAL";
+"zipCodeVC/bodyLabel1" = "Ingresa tu código postal para comenzar \na comprar";
+"zipCodeVC/textField/placeholder" = "Código Postal";
+"zipCodeVC/enterButton/title" = "INGRESAR";
+
+"zipCodeVC/textField/errorLabel1" = "Por favor, Ingresa un código postal válido";
+
+//MARK: - PopUp UIVC Text
+"popUpUIVC/label/headingLabel" = "¿TE GUSTARÍA SABER CUANDO LLEGAMOS A TU ZONA?";
+"popUpUIVC/label/subHeadingLabel" = "Aún no entregamos a: 12350 Ingresa tu correo para recibir nuestras últimas noticias y promociones de meatme";
+"popUpUIVC/label/textFieldLabel" = "Ingresa tu correo";
+"popUpUIVC/textField/placeholder" = "athira@applabb.com";
+"popUpUIVC/notifyButton/titleLabel" = "Notificarme";
+"popUpUIVC/changeZipCodeButton/titleLabel" = "CAMBIAR CÓDIGO POSTAL";
+
+//MARK: - Home UIVC Text
+"homeUIVC/SearchBar/placeholder" = "Buscar";
+"homeUIVC/ZipCodeButton/title" = "Lo sentimos, aún no entregamos en Cambiar código postal 11043";
+
+
+//MARK: - ProductsCollectionTVC Texts
+"productsCollectionTVC/seeMoreButton/titleLabel" = "VER MÁS";
+"productsCollectionTVC/productLabel/Text" = "DESCONGELA SÓLO LO QUE NECESITAS";
