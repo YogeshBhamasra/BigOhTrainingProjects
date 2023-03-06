@@ -1,6 +1,0 @@
-framework module Pods_Meat_Me_Sample_Application {
-  umbrella header "Pods-Meat Me Sample Application-umbrella.h"
-
-  export *
-  module * { export * }
-}
