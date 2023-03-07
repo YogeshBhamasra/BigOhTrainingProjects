@@ -12,6 +12,9 @@ class HomeUIVC: NSObject, ObservableUIVC {
     var viewModel: ObservableVM
     
     
+    var railCell: RailCollectionTVC?
+    var productCell: ProductsCollectionTVC?
+    var imageCell: SlideImagesCollectionTVC?
     
     init(view: HomeVCView, viewModel: ObservableVM) {
         self.view = view
@@ -23,11 +26,7 @@ class HomeUIVC: NSObject, ObservableUIVC {
         setNavigationBarItems()
         setSearchBar()
         setChangeZipcodeButton()
-        setCollectionView()
         railCategoriesData()
-        loadImagesInSlide()
-        modifyPageControl()
-        loadProductsInView()
         setTableView()
     }
 
@@ -66,17 +65,16 @@ class HomeUIVC: NSObject, ObservableUIVC {
     
     //MARK: - Setting Table View
     func setTableView() {
-        view.homeTableView.register(HomeTVC.uiNib(),
-                                    forCellReuseIdentifier: HomeTVC.identifier)
-        view.homeTableView.register(RailCategoriesCVC.uiNib(),
-                                    forCellReuseIdentifier: RailCategoriesCVC.identifier)
-        view.homeTableView.register(SlideShowImagesCVC.uiNib(),
-                                    forCellReuseIdentifier: SlideShowImagesCVC.identifier)
-        view.homeTableView.register(DisplayProductsCVC.uiNib(),
-                                    forCellReuseIdentifier: DisplayProductsCVC.identifier)
+        view.homeTableView.register(RailCollectionTVC.uiNib(),
+                                    forCellReuseIdentifier: RailCollectionTVC.identifier)
+        view.homeTableView.register(SlideImagesCollectionTVC.uiNib(),
+                                    forCellReuseIdentifier: SlideImagesCollectionTVC.identifier)
+        view.homeTableView.register(ProductsCollectionTVC.uiNib(),
+                                    forCellReuseIdentifier: ProductsCollectionTVC.identifier)
         
         view.homeTableView.delegate = self
         view.homeTableView.dataSource = self
+//        view.homeTableView.rowHeight = UITableView.automaticDimension
     }
     
     
@@ -122,30 +120,7 @@ class HomeUIVC: NSObject, ObservableUIVC {
         view.changeZipcodeButton.addSubview(trailingImageView)
         
     }
-    
-    //MARK: - Setting Up Page Control
-    func modifyPageControl() {
-        view.slideshowPageControl.layer.borderColor = UIColor.lightGray.cgColor
-        view.slideshowPageControl.layer.borderWidth = 1.0
-        
-    }
-    
-    // MARK: - Setting Collection View Items
-    func setCollectionView() {
-        view.railCollectionView.backgroundColor = .systemGray4
-        view.railCollectionView.register(RailCategoriesCVC.uiNib(), forCellWithReuseIdentifier: RailCategoriesCVC.identifier)
-        view.railCollectionView.delegate = self
-        view.railCollectionView.dataSource = self
-        
-        view.slideShowImageCollectionView.register(SlideShowImagesCVC.uiNib(), forCellWithReuseIdentifier: SlideShowImagesCVC.identifier)
-        view.slideShowImageCollectionView.dataSource = self
-        view.slideShowImageCollectionView.delegate = self
-        
-        view.showProductsCollectionView.register(DisplayProductsCVC.uiNib(), forCellWithReuseIdentifier: DisplayProductsCVC.identifier)
-        view.showProductsCollectionView.dataSource = self
-        view.showProductsCollectionView.delegate = self
-        
-    }
+
     
     
     //MARK: - Load Rail Categories with Data
@@ -166,67 +141,50 @@ class HomeUIVC: NSObject, ObservableUIVC {
             
         }
         
+        VM.homePageData.bind { [weak self] result in
+            guard let result else { return }
+            self?.view.cellData.append(result)
+            switch result {
+                
+            case .railCategory(model: let model):
+                self?.view.railCategories = model
+            case .products(model: let model, rows: _):
+                self?.view.productsData = model
+            case .images(image: let image):
+                self?.view.slideShowImagesData = image
+            }
+            
+            
+            
+        }
+
+        
         VM.railImageDataDownloaded.bind { [weak self] data in
             guard let data else { return }
             self?.view.railImageData.append(data)
-            HomeTVC.railCategoriesImagesData.append(data)
-            DispatchQueue.main.async {
-                self?.view.railCollectionView.reloadData()
-            }
-        }
-    }
-    
-    //MARK: - Load Images in Slide Show
-    func loadImagesInSlide() {
-        guard let VM = viewModel as? HomeVM else { return }
-        DispatchQueue.main.async {
-            VM.loadSlideShowImages()
-        }
-        
-        VM.slideShowImagesToShow.bind { [weak self] images in
-            guard let images else { return }
-            
-            self?.view.slideshowImages = images
-            DispatchQueue.main.async {
-                self?.view.slideShowImageCollectionView.reloadData()
-            }
-        }
-    }
-    
-    //MARK: - Load Products in View
-    func loadProductsInView() {
-        guard let VM = viewModel as? HomeVM else { return }
-        
-        DispatchQueue.main.async {
-            VM.loadProducts()
-        }
-        
-        VM.availableProductsData.bind { [weak self] product in
-            guard let product else { return }
-            
-            self?.view.availableProducts = product
-            DispatchQueue.main.async {
-                self?.view.showProductsCollectionView.reloadData()
-            }
-        }
-        
-        VM.homePageData.bind { [weak self] result in
-            guard let result else { return }
-            
-            self?.view.cellData.append(result)
-            HomeTVC.models.append(result)
             DispatchQueue.main.async {
                 self?.view.homeTableView.reloadData()
             }
-            
         }
     }
+
 }
 
 //MARK: - Table View Data Source and Delegate
 extension HomeUIVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        if indexPath.section == 0 {
+            return CGFloat(88)
+        } else if indexPath.section == 1 {
+            return CGFloat(255)
+        } else {
+            return CGFloat(410)
+        }
     }
 }
 
@@ -240,119 +198,39 @@ extension HomeUIVC: UITableViewDataSource {
             
         case .railCategory(model: _):
             return 1
-        case .products(model: let model, rows: _):
-            return model.count
+        case .products(model: _ , rows: let rows):
+            debugPrint(rows)
+            return 1
         case .images(image: _):
             return 1
         }
     }
     
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: HomeTVC.identifier) as? HomeTVC
-        guard let cell else { return HomeTVC() }
-        switch view.cellData[indexPath.section] {
-            
-        case .railCategory(model: let model):
-            let category = model[indexPath.row]
-            cell.customCollectionView.register(RailCategoriesCVC.uiNib(), forCellWithReuseIdentifier: RailCategoriesCVC.identifier)
+        
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: RailCollectionTVC.identifier) as? RailCollectionTVC
+            guard let cell else { return RailCollectionTVC() }
+            cell.setupCell(model: view.railCategories, imagesData: view.railImageData)
             return cell
-            
-        case .products(model: let models, rows: _):
-            let model = models[indexPath.row]
-            cell.customCollectionView.register(DisplayProductsCVC.uiNib(), forCellWithReuseIdentifier: DisplayProductsCVC.identifier)
+        } else if indexPath.section == 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: SlideImagesCollectionTVC.identifier) as? SlideImagesCollectionTVC
+
+            guard let cell else { return SlideImagesCollectionTVC() }
+            cell.setupCell(model: view.slideShowImagesData)
             return cell
-            
-            
-        case .images(image: let images):
-            let image = images[indexPath.row]
-            cell.customCollectionView.register(SlideShowImagesCVC.uiNib(), forCellWithReuseIdentifier: SlideShowImagesCVC.identifier)
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: ProductsCollectionTVC.identifier) as? ProductsCollectionTVC
+
+            guard let cell else { return ProductsCollectionTVC() }
+            cell.setupCell(model: view.productsData)
             return cell
         }
-        
     }
     
     
 }
 
-//MARK: - Collection View Data Source and Delegate
-extension HomeUIVC: UICollectionViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
-        let visibleRect = CGRect(origin: self.view.slideShowImageCollectionView.contentOffset, size: self.view.slideShowImageCollectionView.bounds.size)
-        let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
-        if let visibleIndexPath = self.view.slideShowImageCollectionView.indexPathForItem(at: visiblePoint) {
-            self.view.slideshowPageControl.currentPage = visibleIndexPath.row
-        }
-        
-    }
-}
-
-extension HomeUIVC: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if collectionView == view.railCollectionView {
-            return view.railImageData.count
-        } else if collectionView == view.slideShowImageCollectionView {
-            view.slideshowPageControl.numberOfPages = view.slideshowImages.count
-            return view.slideshowImages.count
-        } else if collectionView == view.showProductsCollectionView {
-//            return view.availableProducts.count
-            return 10
-        }
-        return 0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if collectionView == view.railCollectionView{
-            
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RailCategoriesCVC.identifier, for: indexPath) as? RailCategoriesCVC
-            guard let cell else { return RailCategoriesCVC()}
-            
-            let category = view.railCategories[indexPath.row]
-            let dataForImage = view.railImageData[indexPath.row]
-            let image = UIImage(data: dataForImage)
-            
-            let font = UIFont.getMontserratRegular(ofSize: 12)
-            cell.setupCell(image: image, text: category.name, font: font)
-            
-            return cell
-        }
-        else if collectionView == view.slideShowImageCollectionView {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SlideShowImagesCVC.identifier, for: indexPath) as? SlideShowImagesCVC
-            guard let cell else { return SlideShowImagesCVC()}
-            let image = view.slideshowImages[indexPath.row]
-            cell.setupImage(image: image, frame: view.slideShowImageCollectionView.frame)
-            return cell
-        }
-        else if collectionView == view.showProductsCollectionView {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DisplayProductsCVC.identifier, for: indexPath) as? DisplayProductsCVC
-            guard let cell else { return DisplayProductsCVC() }
-            if view.availableProducts.count > 0 {
-                let product = view.availableProducts[0]
-                cell.setupCell(product: product)
-            }
-            
-            return cell
-        }
-        return UICollectionViewCell()
-    }
-    
-    
-}
-
-extension HomeUIVC: UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//
-//        if collectionView == view.slideShowImageCollectionView {
-//            return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.height)
-//        }
-//        else if collectionView == view.railCollectionView {
-//            let width = collectionView.cellForItem(at: indexPath)?.bounds.width ?? 84
-//            let height = collectionView.cellForItem(at: indexPath)?.bounds.height ?? 181
-//            return CGSize(width: width, height: height)
-//        }
-//        return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.height)
-//    }
-//
-    
-}

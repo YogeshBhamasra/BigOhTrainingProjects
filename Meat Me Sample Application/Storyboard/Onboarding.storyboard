@@ -279,100 +279,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1sX-zS-568">
-                                <rect key="frame" x="20" y="167" width="373" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vh1-WT-nO5">
-                                    <size key="itemSize" width="23" height="47"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8RL-VU-yzJ" customClass="CategoriesCVC" customModule="Meat_Me_Sample_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="-1" width="23" height="47"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cdN-l5-bz0">
-                                            <rect key="frame" x="0.0" y="0.0" width="23" height="47"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="23" height="47"/>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                            <collectionView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" semanticContentAttribute="spatial" fixedFrame="YES" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="A1o-aY-uxL">
-                                <rect key="frame" x="0.0" y="220" width="393" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vEZ-iS-PHr">
-                                    <size key="itemSize" width="155" height="46"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="RY3-wP-2Jy">
-                                        <rect key="frame" x="0.0" y="6.666666666666667" width="155" height="46"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4LY-TT-WQ9">
-                                            <rect key="frame" x="0.0" y="0.0" width="155" height="46"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="155" height="46"/>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="yhy-wB-ojM">
-                                <rect key="frame" x="149" y="421" width="115.66666666666669" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="pageIndicatorTintColor" systemColor="quaternaryLabelColor"/>
-                                <color key="currentPageIndicatorTintColor" systemColor="secondaryLabelColor"/>
-                            </pageControl>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dQw-Mw-KUo">
-                                <rect key="frame" x="0.0" y="312" width="393" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6Ro-aQ-68K">
-                                    <size key="itemSize" width="111" height="36"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Gvr-6w-C3a" customClass="DisplayProductsCVC" customModule="Meat_Me_Sample_Application" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="4" width="111" height="36"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cvI-PI-863">
-                                            <rect key="frame" x="0.0" y="0.0" width="111" height="36"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="111" height="36"/>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DESCONGELA SÓLO LO QUE NECESITAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9p-mg-Ajn">
-                                <rect key="frame" x="53" y="448" width="211" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Oswald-SemiBold" family="Oswald" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAa-i5-OoY">
-                                <rect key="frame" x="286" y="448" width="80" height="11"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="VER MAS">
-                                    <fontDescription key="titleFontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="11"/>
-                                </buttonConfiguration>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DOi-Hp-Aek">
-                                <rect key="frame" x="0.0" y="498" width="393" height="320"/>
+                                <rect key="frame" x="0.0" y="153" width="393" height="665"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="320" id="nX8-Co-rff"/>
-                                </constraints>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Q2U-eG-5HI"/>
@@ -381,6 +290,7 @@
                             <constraint firstItem="GG4-TR-ANT" firstAttribute="top" secondItem="Q2U-eG-5HI" secondAttribute="top" id="0kO-UI-eAk"/>
                             <constraint firstItem="Q2U-eG-5HI" firstAttribute="trailing" secondItem="AXO-BD-hNg" secondAttribute="trailing" id="8hv-HZ-Bcm"/>
                             <constraint firstItem="DOi-Hp-Aek" firstAttribute="leading" secondItem="Q2U-eG-5HI" secondAttribute="leading" id="GmO-wK-7WM"/>
+                            <constraint firstItem="DOi-Hp-Aek" firstAttribute="top" secondItem="AXO-BD-hNg" secondAttribute="bottom" id="cn6-sq-7Gi"/>
                             <constraint firstItem="DOi-Hp-Aek" firstAttribute="bottom" secondItem="Q2U-eG-5HI" secondAttribute="bottom" id="ecU-xk-cJt"/>
                             <constraint firstItem="DOi-Hp-Aek" firstAttribute="trailing" secondItem="Q2U-eG-5HI" secondAttribute="trailing" id="fbF-qY-gcA"/>
                             <constraint firstItem="AXO-BD-hNg" firstAttribute="leading" secondItem="Q2U-eG-5HI" secondAttribute="leading" id="ktc-aF-qT0"/>
@@ -392,11 +302,7 @@
                     <connections>
                         <outlet property="changeZipcodeButton" destination="AXO-BD-hNg" id="Pf6-3Z-7tH"/>
                         <outlet property="homeTableView" destination="DOi-Hp-Aek" id="Oad-tH-oep"/>
-                        <outlet property="railCollectionView" destination="1sX-zS-568" id="Yer-IM-5QX"/>
                         <outlet property="searchField" destination="GG4-TR-ANT" id="nQo-bF-tZr"/>
-                        <outlet property="showProductsCollectionView" destination="dQw-Mw-KUo" id="xHv-fg-IZy"/>
-                        <outlet property="slideShowImageCollectionView" destination="A1o-aY-uxL" id="yTr-0i-j5J"/>
-                        <outlet property="slideshowPageControl" destination="yhy-wB-ojM" id="ST5-zQ-e0U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YqN-sU-FRY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -521,12 +427,6 @@
         <image name="onboarding_arrow" width="108" height="32"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="quaternaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17647058823529413" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

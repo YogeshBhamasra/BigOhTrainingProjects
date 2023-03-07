@@ -31,8 +31,6 @@
 		A629EE5A29A8975E00E97FA7 /* Oswald-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A629EE5129A8975E00E97FA7 /* Oswald-VariableFont_wght.ttf */; };
 		A629EE5D29A8AAF200E97FA7 /* OnboardingViewModel copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A629EE5C29A8AAF200E97FA7 /* OnboardingViewModel copy.swift */; };
 		A629EE6029A8AE0500E97FA7 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A629EE5F29A8AE0500E97FA7 /* SplashViewModel.swift */; };
-		A633A67929B339FD00A90D6A /* HomeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A633A67729B339FD00A90D6A /* HomeTVC.swift */; };
-		A633A67A29B339FD00A90D6A /* HomeTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A633A67829B339FD00A90D6A /* HomeTVC.xib */; };
 		A63F74DB29A8DFC6008EAD81 /* ZipCodeUIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F74DA29A8DFC6008EAD81 /* ZipCodeUIVC.swift */; };
 		A63F74DD29A8DFE2008EAD81 /* ZipCodeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F74DC29A8DFE2008EAD81 /* ZipCodeVM.swift */; };
 		A65B65CC29B20A97004D1CB6 /* DisplayProductsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B65CA29B20A96004D1CB6 /* DisplayProductsCVC.swift */; };
@@ -153,8 +151,6 @@
 		A629EE5129A8975E00E97FA7 /* Oswald-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		A629EE5C29A8AAF200E97FA7 /* OnboardingViewModel copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OnboardingViewModel copy.swift"; sourceTree = "<group>"; };
 		A629EE5F29A8AE0500E97FA7 /* SplashViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
-		A633A67729B339FD00A90D6A /* HomeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeTVC.swift; path = "../../../../../../../../../../../Yogesh's T7/Users/yogeshrao/Desktop/Yogesh's T7/BIG_OH_Swift/Meat Me Sample Application/Meat Me Sample Application/View/Home/HomeTVC/HomeTVC.swift"; sourceTree = "<group>"; };
-		A633A67829B339FD00A90D6A /* HomeTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HomeTVC.xib; path = "../../../../../../../../../../../Yogesh's T7/Users/yogeshrao/Desktop/Yogesh's T7/BIG_OH_Swift/Meat Me Sample Application/Meat Me Sample Application/View/Home/HomeTVC/HomeTVC.xib"; sourceTree = "<group>"; };
 		A63F74DA29A8DFC6008EAD81 /* ZipCodeUIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ZipCodeUIVC.swift; path = "../../../../../../../../../../../Yogesh's T7/Users/yogeshrao/Desktop/Yogesh's T7/BIG_OH_Swift/Meat Me Sample Application/Meat Me Sample Application/View/ZipCode/ZipCodeUIVC/ZipCodeUIVC.swift"; sourceTree = "<group>"; };
 		A63F74DC29A8DFE2008EAD81 /* ZipCodeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ZipCodeVM.swift; path = "../../../../../../../../../../../Yogesh's T7/Users/yogeshrao/Desktop/Yogesh's T7/BIG_OH_Swift/Meat Me Sample Application/Meat Me Sample Application/View/ZipCode/ZipCodeVM/ZipCodeVM.swift"; sourceTree = "<group>"; };
 		A65B65CA29B20A96004D1CB6 /* DisplayProductsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DisplayProductsCVC.swift; path = "../../../../../../../../../../../Yogesh's T7/Users/yogeshrao/Desktop/Yogesh's T7/BIG_OH_Swift/Meat Me Sample Application/Meat Me Sample Application/View/Home/DisplayProductsCVC/DisplayProductsCVC.swift"; sourceTree = "<group>"; };
@@ -486,15 +482,6 @@
 			path = SplashVM;
 			sourceTree = "<group>";
 		};
-		A633A67629B339BC00A90D6A /* HomeTVC */ = {
-			isa = PBXGroup;
-			children = (
-				A633A67729B339FD00A90D6A /* HomeTVC.swift */,
-				A633A67829B339FD00A90D6A /* HomeTVC.xib */,
-			);
-			path = HomeTVC;
-			sourceTree = "<group>";
-		};
 		A63F74CF29A8D234008EAD81 /* ZipCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -647,7 +634,6 @@
 				A689A44529B5AC8A00F615AE /* ProductsCollectionTVC */,
 				A689A44429B5AC7500F615AE /* SlideImagesCollectionTVC */,
 				A689A44329B5AC6200F615AE /* RailCollectionTVC */,
-				A633A67629B339BC00A90D6A /* HomeTVC */,
 				A65B65C929B20A56004D1CB6 /* DisplayProductsCVC */,
 				A6C65C2E29B1C82300CAFDAB /* SlideShowImagesCVC */,
 				A6C2CD4D29B0CA9400EB9CE3 /* RailCategoriesCVC */,
@@ -941,7 +927,6 @@
 				A6C65C3229B1C84700CAFDAB /* SlideShowImagesCVC.xib in Resources */,
 				A6BB965C29A72B8700A61141 /* Onboarding.storyboard in Resources */,
 				A6BB968029A735AE00A61141 /* Montserrat-BlackItalic.ttf in Resources */,
-				A633A67A29B339FD00A90D6A /* HomeTVC.xib in Resources */,
 				A6BB968129A735AE00A61141 /* Montserrat-SemiBold.ttf in Resources */,
 				A6BB967F29A735AE00A61141 /* Montserrat-MediumItalic.ttf in Resources */,
 				A6BB967829A735AE00A61141 /* Montserrat-Medium.ttf in Resources */,
@@ -1105,7 +1090,6 @@
 				A626F48429A63A1A00DE0D62 /* UINavigation+StoryBoard.swift in Sources */,
 				A67D1EAB29A7A27A000167D9 /* UIImage.swift in Sources */,
 				A66EFCC329ACCB49007AEB0E /* APIErrors.swift in Sources */,
-				A633A67929B339FD00A90D6A /* HomeTVC.swift in Sources */,
 				A626F44829A6372300DE0D62 /* AppDelegate.swift in Sources */,
 				A6BB18D329B065F100B0AB2D /* HomeVM.swift in Sources */,
 				A6BB18D729B066A300B0AB2D /* HomeVC.swift in Sources */,

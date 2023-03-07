@@ -11,29 +11,22 @@ protocol HomeVCView: UIViewController {
     var searchField: CustomSearchBar! { get set }
     var railCategories: [CategoryModel] { get set }
     var changeZipcodeButton: UIButton! { get set }
-    var railCollectionView: UICollectionView! { get set }
     var railImageData: [Data] { get set }
     
     var homeTableView: UITableView! { get set }
-    
-    var slideShowImageCollectionView: UICollectionView! { get set }
     var slideshowImages: [UIImage] { get set }
     
-    var showProductsCollectionView: UICollectionView! { get set }
-    var availableProducts: Products { get set }
-    
     var cellData: [CellType] { get set }
-    
-    var slideshowPageControl: UIPageControl! { get set }
+    var slideShowImagesData: [UIImage] { get set }
+    var productsData: Products { get set }
 }
 
 class HomeVC: UIViewController, HomeVCView {
+    var slideShowImagesData: [UIImage] = []
+    var productsData: Products = []
+    
     @IBOutlet weak var searchField: CustomSearchBar!
     @IBOutlet weak var changeZipcodeButton: UIButton!
-    @IBOutlet weak var railCollectionView: UICollectionView!
-    @IBOutlet weak var slideShowImageCollectionView: UICollectionView!
-    @IBOutlet weak var slideshowPageControl: UIPageControl!
-    @IBOutlet weak var showProductsCollectionView: UICollectionView!
     @IBOutlet weak var homeTableView: UITableView!
     
     var railCategories: [CategoryModel] = []

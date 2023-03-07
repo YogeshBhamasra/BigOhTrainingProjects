@@ -169,5 +169,8 @@ extension OnboardingUIVC: UICollectionViewDelegateFlowLayout {
         return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.height)
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.0
+    }
 }
 

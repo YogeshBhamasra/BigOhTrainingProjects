@@ -35,6 +35,31 @@ class HomeVM: NSObject, ObservableVM {
                 
             }
         }
+        
+        self.slideShowImagesToShow.value = [
+            UIImage(named: "cart_icon")!,
+            UIImage(named: "delivery_icon")!,
+            UIImage(named: "onboarding_arrow")!,
+            UIImage(named: "meatme es wildfotk")!
+        ]
+        
+        self.availableProductsData.value = [
+            ProductDetails(productImage: UIImage(named: "81021-mini-waffles-de-belgica-cocinado_900x900")!.pngData()!, previouslyOrderedImage: UIImage(named: "Previously Ordered")?.pngData(), productName: "TOP SIRLOIN DE RES BISTEC DE CORTE", rating: "rating (0)", productWeight: "0.375 KG", numberOfPieces: "1 pieza", productPrice: "$17.00", productPricePerKG: "$15.92/KG", buttonTitle: "CAMBIAR CÓDIGO POSTAL"),
+            ProductDetails(productImage: UIImage(named: "81021-mini-waffles-de-belgica-cocinado_900x900")!.pngData()!, previouslyOrderedImage: UIImage(named: "Previously Ordered")?.pngData(), productName: "TOP SIRLOIN DE RES BISTEC DE CORTE", rating: "rating (0)", productWeight: "0.375 KG", numberOfPieces: "1 pieza", productPrice: "$17.00", productPricePerKG: "$15.92/KG", buttonTitle: "CAMBIAR CÓDIGO POSTAL"),
+            ProductDetails(productImage: UIImage(named: "81021-mini-waffles-de-belgica-cocinado_900x900")!.pngData()!, previouslyOrderedImage: UIImage(named: "Previously Ordered")?.pngData(), productName: "TOP SIRLOIN DE RES BISTEC DE CORTE", rating: "rating (0)", productWeight: "0.375 KG", numberOfPieces: "1 pieza", productPrice: "$17.00", productPricePerKG: "$15.92/KG", buttonTitle: "CAMBIAR CÓDIGO POSTAL"),
+            ProductDetails(productImage: UIImage(named: "81021-mini-waffles-de-belgica-cocinado_900x900")!.pngData()!, previouslyOrderedImage: UIImage(named: "Previously Ordered")?.pngData(), productName: "TOP SIRLOIN DE RES BISTEC DE CORTE", rating: "rating (0)", productWeight: "0.375 KG", numberOfPieces: "1 pieza", productPrice: "$17.00", productPricePerKG: "$15.92/KG", buttonTitle: "CAMBIAR CÓDIGO POSTAL"),
+            ProductDetails(productImage: UIImage(named: "81021-mini-waffles-de-belgica-cocinado_900x900")!.pngData()!, previouslyOrderedImage: UIImage(named: "Previously Ordered")?.pngData(), productName: "TOP SIRLOIN DE RES BISTEC DE CORTE", rating: "rating (0)", productWeight: "0.375 KG", numberOfPieces: "1 pieza", productPrice: "$17.00", productPricePerKG: "$15.92/KG", buttonTitle: "CAMBIAR CÓDIGO POSTAL"),
+            ProductDetails(productImage: UIImage(named: "81021-mini-waffles-de-belgica-cocinado_900x900")!.pngData()!, previouslyOrderedImage: UIImage(named: "Previously Ordered")?.pngData(), productName: "TOP SIRLOIN DE RES BISTEC DE CORTE", rating: "rating (0)", productWeight: "0.375 KG", numberOfPieces: "1 pieza", productPrice: "$17.00", productPricePerKG: "$15.92/KG", buttonTitle: "CAMBIAR CÓDIGO POSTAL"),
+            ProductDetails(productImage: UIImage(named: "81021-mini-waffles-de-belgica-cocinado_900x900")!.pngData()!, previouslyOrderedImage: UIImage(named: "Previously Ordered")?.pngData(), productName: "TOP SIRLOIN DE RES BISTEC DE CORTE", rating: "rating (0)", productWeight: "0.375 KG", numberOfPieces: "1 pieza", productPrice: "$17.00", productPricePerKG: "$15.92/KG", buttonTitle: "CAMBIAR CÓDIGO POSTAL"),
+            ProductDetails(productImage: UIImage(named: "81021-mini-waffles-de-belgica-cocinado_900x900")!.pngData()!, previouslyOrderedImage: UIImage(named: "Previously Ordered")?.pngData(), productName: "TOP SIRLOIN DE RES BISTEC DE CORTE", rating: "rating (0)", productWeight: "0.375 KG", numberOfPieces: "1 pieza", productPrice: "$17.00", productPricePerKG: "$15.92/KG", buttonTitle: "CAMBIAR CÓDIGO POSTAL"),
+            ProductDetails(productImage: UIImage(named: "81021-mini-waffles-de-belgica-cocinado_900x900")!.pngData()!, previouslyOrderedImage: UIImage(named: "Previously Ordered")?.pngData(), productName: "TOP SIRLOIN DE RES BISTEC DE CORTE", rating: "rating (0)", productWeight: "0.375 KG", numberOfPieces: "1 pieza", productPrice: "$17.00", productPricePerKG: "$15.92/KG", buttonTitle: "CAMBIAR CÓDIGO POSTAL"),
+            ProductDetails(productImage: UIImage(named: "81021-mini-waffles-de-belgica-cocinado_900x900")!.pngData()!, previouslyOrderedImage: UIImage(named: "Previously Ordered")?.pngData(), productName: "TOP SIRLOIN DE RES BISTEC DE CORTE", rating: "rating (0)", productWeight: "0.375 KG", numberOfPieces: "1 pieza", productPrice: "$17.00", productPricePerKG: "$15.92/KG", buttonTitle: "CAMBIAR CÓDIGO POSTAL")
+        ]
+        
+        
+        
+        self.homePageData.value = .images(image: self.slideShowImagesToShow.value ?? [])
+        self.homePageData.value = .products(model: self.availableProductsData.value ?? [], rows: 10)
     }
     
     func downloadImage(url: URL) {
@@ -47,24 +72,6 @@ class HomeVM: NSObject, ObservableVM {
             weakSelf.railImageDataDownloaded.value = result
             
         }
-    }
-
-    func loadSlideShowImages() {
-        self.slideShowImagesToShow.value = [
-            UIImage(named: "cart_icon")!,
-            UIImage(named: "delivery_icon")!,
-            UIImage(named: "onboarding_arrow")!,
-            UIImage(named: "meatme es wildfotk")!
-        ]
-        self.homePageData.value = .images(image: self.slideShowImagesToShow.value ?? [])
-    }
-    
-    func loadProducts() {
-        self.availableProductsData.value = [
-            ProductDetails(productImage: UIImage(named: "81021-mini-waffles-de-belgica-cocinado_900x900")!.pngData()!, previouslyOrderedImage: UIImage(named: "Previously Ordered")?.pngData(), productName: "TOP SIRLOIN DE RES BISTEC DE CORTE", rating: "rating (0)", productWeight: "0.375 KG", numberOfPieces: "1 pieza", productPrice: "$17.00", productPricePerKG: "$15.92/KG", buttonTitle: "CAMBIAR CÓDIGO POSTAL")
-        ]
-        
-        self.homePageData.value = .products(model: self.availableProductsData.value ?? [], rows: 10)
     }
     
 }

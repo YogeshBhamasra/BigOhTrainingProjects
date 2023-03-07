@@ -17,8 +17,10 @@ class SlideShowImagesCVC: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        debugPrint(super.frame)
-//        frame = CGRect(x: 0.0, y: 0.0, width: super.frame.width, height: super.frame.height)
+        self.backgroundColor = .black
+        
+//        frame = CGRect(x: 0.0, y: 0.0, width: UIScreen.main.bounds.width, height: 224)
+        imageView.frame = CGRect(x: 0, y: 0, width: super.frame.width, height: super.frame.height - 15)
         
     }
 
@@ -28,10 +30,13 @@ class SlideShowImagesCVC: UICollectionViewCell {
     }
     
     func setupImage(image: UIImage?, frame: CGRect) {
-
+        
+        debugPrint(frame)
+        
         imageView.frame = frame
         imageView.image = image ?? UIImage()
         imageView.contentMode = .scaleAspectFit
+        imageView.backgroundColor = .white
     }
     
     

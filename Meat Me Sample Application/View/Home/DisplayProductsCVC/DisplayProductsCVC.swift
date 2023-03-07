@@ -34,16 +34,15 @@ class DisplayProductsCVC: UICollectionViewCell {
         productImageView.image = nil
         previouslyOrderedImageView.image = nil
         productNameLabel.text = nil
-//        rating.text = nil
         productWeightLabel.text = nil
         numberOfPieces.text = nil
         productPrice.text = nil
         productPricePerKG.text = nil
-//        addProductToCartButton.imageView?.image = nil
-//        addProductToCartButton.titleLabel?.text = nil
+
     }
     
     func setupCell(product: ProductDetails) {
+        
         setProductName(text: product.productName)
         setProductCount(text: product.numberOfPieces)
         setProductPrice(text: product.productPrice)
