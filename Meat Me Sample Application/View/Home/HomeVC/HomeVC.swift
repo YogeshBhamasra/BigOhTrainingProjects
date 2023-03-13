@@ -42,7 +42,17 @@ class HomeVC: UIViewController, HomeVCView {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+            let swipeRight = UISwipeGestureRecognizer(target: self, action:  #selector(self.swiped))
+            swipeRight.direction = UISwipeGestureRecognizer.Direction.left
+           self.view.addGestureRecognizer(swipeRight)
         homeUIVC?.setupUI()
+    }
+    @objc  func swiped(_ gesture: UISwipeGestureRecognizer) {
+        
+        if gesture.direction == .left {
+            self.tabBarController?.selectedIndex = 3
+        }
     }
     
     class func instance() -> HomeVC {

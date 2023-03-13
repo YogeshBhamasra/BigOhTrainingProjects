@@ -18,11 +18,8 @@ class SplashVM: NSObject, ObservableVM {
         
         if appState == AppState.onboarded {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-//                let vc = ZipCodeVC.instance()
-                let vc = HomeVC.instance()
-                vc.modalTransitionStyle = .crossDissolve
-                self.result.value = vc
-                //                self.navigationController?.setViewControllers([vc], animated: true)
+                let tabBarVC = Storyboard.onboarding.instanceOf(viewController: TabBarVC.self)!
+                self.result.value = tabBarVC
                 
             }
         }
@@ -31,7 +28,7 @@ class SplashVM: NSObject, ObservableVM {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 let vc = OnboardingVC.instance()
                 self.result.value = vc
-//                self.navigationController?.setViewControllers([vc], animated: true)
+
                 debugPrint("Welcome to On Boarding")
             }
         }

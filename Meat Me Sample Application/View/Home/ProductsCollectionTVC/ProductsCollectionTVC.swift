@@ -7,11 +7,16 @@
 
 import UIKit
 
+protocol SelectedProductDelegate {
+    func didSelectProduct(data: ProductDetails)
+}
+
 class ProductsCollectionTVC: UITableViewCell {
     @IBOutlet weak var productLabel: UILabel!
     @IBOutlet weak var seeMoreButton: UIButton!
     @IBOutlet weak var productsCollection: UICollectionView!
     
+    var delegate: SelectedProductDelegate?
     var productsData: Products = []
     static let identifier = "ProductsCollectionTVC"
     static func uiNib() -> UINib {
@@ -25,6 +30,7 @@ class ProductsCollectionTVC: UITableViewCell {
         // Initialization code
         productsCollection.dataSource = self
         productsCollection.delegate = self
+        productsCollection.backgroundColor = .clear
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -36,7 +42,12 @@ class ProductsCollectionTVC: UITableViewCell {
     
     func setHeader() {
         productLabel.text = LocalisableString.ProductCollectionTVC.productLabel.localised
+        
         seeMoreButton.setTitle(LocalisableString.ProductCollectionTVC.seeMoreButtonTitle.localised, for: .normal)
+        seeMoreButton.titleLabel?.font = .getMontserratRegular(ofSize: 10)
+
+        seeMoreButton.contentMode = .scaleAspectFit
+        
     }
     
     func setupCell(model: Products) {
@@ -46,7 +57,10 @@ class ProductsCollectionTVC: UITableViewCell {
 }
 
 extension ProductsCollectionTVC: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.didSelectProduct(data: productsData[indexPath.row])
+        
+    }
 }
 
 extension ProductsCollectionTVC: UICollectionViewDataSource {
@@ -59,8 +73,8 @@ extension ProductsCollectionTVC: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DisplayProductsCVC.identifier, for: indexPath) as? DisplayProductsCVC
         guard let cell else { return DisplayProductsCVC() }
         cell.setupCell(product: productsData[indexPath.row])
-        
-        cell.backgroundColor = .systemGray4
+        cell.setupCellButton(font: .getOswaldMedium(ofSize: 15), textColor: .white, bacgroundColor: .black, title: LocalisableString.ProductCollectionTVC.addToCartWithZip.localised)
+        cell.backgroundColor = .white
         return cell
     }
     
@@ -71,6 +85,6 @@ extension ProductsCollectionTVC: UICollectionViewDataSource {
 extension ProductsCollectionTVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: super.frame.width / 2.3, height: super.frame.height - 65)
+        return CGSize(width: super.frame.width / 2.3, height: super.frame.height - 70)
     }
 }

@@ -21,11 +21,10 @@ class RailCollectionTVC: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-//        backgroundColor = .systemGray4
         railCollectionView.register(RailCategoriesCVC.uiNib(), forCellWithReuseIdentifier: RailCategoriesCVC.identifier)
         railCollectionView.dataSource = self
         railCollectionView.delegate = self
-        railCollectionView.backgroundColor = .systemGray4
+        railCollectionView.backgroundColor = .clear
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -54,10 +53,20 @@ extension RailCollectionTVC: UICollectionViewDataSource {
         guard let cell else { return RailCategoriesCVC() }
         let data = cellData[indexPath.row]
         let image = UIImage(data: railCategoriesImagesData[indexPath.row])
-        cell.setupCell(image: image, text: data.name, font: .getMontserratRegular(ofSize: 12))
-        
+        cell.setupCell(image: image, text: data.name, font: .getMontserratRegular(ofSize: 10))
+
         return cell
     }
     
     
+}
+
+extension RailCollectionTVC: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: railCollectionView.frame.width / 6, height: railCollectionView.frame.height + 30)
+    }
 }

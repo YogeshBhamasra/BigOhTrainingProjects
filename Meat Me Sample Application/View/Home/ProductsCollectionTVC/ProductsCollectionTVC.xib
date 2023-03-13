@@ -9,6 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
         <array key="Oswald-SemiBold.ttf">
             <string>Oswald-SemiBold</string>
         </array>
@@ -24,7 +27,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2BC-mM-bLc">
-                        <rect key="frame" x="0.0" y="68" width="533" height="405"/>
+                        <rect key="frame" x="0.0" y="56" width="533" height="417"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nvl-u9-Qov">
                             <size key="itemSize" width="128" height="128"/>
@@ -34,7 +37,7 @@
                         </collectionViewFlowLayout>
                     </collectionView>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESCONGELA SÓLO LO QUE NECESITAS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heD-rm-6ms">
-                        <rect key="frame" x="20" y="24" width="211" height="20"/>
+                        <rect key="frame" x="20" y="24" width="211.33333333333334" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="yWl-1H-VSd"/>
                         </constraints>
@@ -43,27 +46,26 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qI-2u-23S">
-                        <rect key="frame" x="441" y="27" width="72" height="14"/>
+                        <rect key="frame" x="465" y="27" width="48" height="14"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="OAF-3F-x9r"/>
                         </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="10"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title="See More">
-                            <fontDescription key="titleFontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="10"/>
-                        </buttonConfiguration>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="See More"/>
                     </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="2BC-mM-bLc" secondAttribute="trailing" id="0Yu-W8-Uw5"/>
-                    <constraint firstItem="2BC-mM-bLc" firstAttribute="top" secondItem="0qI-2u-23S" secondAttribute="bottom" constant="27" id="5CK-m7-opL"/>
+                    <constraint firstItem="2BC-mM-bLc" firstAttribute="top" secondItem="0qI-2u-23S" secondAttribute="bottom" constant="15" id="5CK-m7-opL"/>
                     <constraint firstAttribute="bottom" secondItem="2BC-mM-bLc" secondAttribute="bottom" id="OPs-GH-6wA"/>
                     <constraint firstItem="heD-rm-6ms" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="PvS-Dt-oid"/>
                     <constraint firstItem="heD-rm-6ms" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="iDa-w6-7ft"/>
                     <constraint firstAttribute="trailing" secondItem="0qI-2u-23S" secondAttribute="trailing" constant="20" id="nyH-F3-6M6"/>
                     <constraint firstItem="0qI-2u-23S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="27" id="pGk-5H-ElV"/>
                     <constraint firstItem="2BC-mM-bLc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ubl-hg-VtY"/>
-                    <constraint firstItem="2BC-mM-bLc" firstAttribute="top" secondItem="heD-rm-6ms" secondAttribute="bottom" constant="24" id="yeV-ir-8FL"/>
+                    <constraint firstItem="2BC-mM-bLc" firstAttribute="top" secondItem="heD-rm-6ms" secondAttribute="bottom" constant="12" id="yeV-ir-8FL"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

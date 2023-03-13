@@ -78,5 +78,65 @@ class LocalisableString {
         }
         case seeMoreButtonTitle = "productsCollectionTVC/seeMoreButton/titleLabel"
         case productLabel = "productsCollectionTVC/productLabel/Text"
+        case addToCartWithoutZip = "productsCollectionTVC/addToCartButton/Title1"
+        case addToCartWithZip = "productsCollectionTVC/addToCartButton/Title2"
+    }
+    
+    //MARK: - Tab Bar Items Localised Text
+    enum TabBarVC: String {
+        var localised: String {
+            return self.rawValue.localized
+        }
+        
+        case shopButtonTitle = "tabBarVC/shopBarButton/titleLabel"
+        case cartButtonTitle = "tabBarVC/cartBarButton/titleLabel"
+        case accountButtonTitle = "tabBarVC/accountBarButton/titleLabel"
+        case moreButtonTitle = "tabBarVC/moreBarButton/titleLabel"
+    }
+    
+    //MARK: - More UIVC Localised Text
+    enum MoreUIVC: String {
+        var localised: String {
+            return self.rawValue.localized
+        }
+        case howToBuyButtonTitle = "moreUIVC/howToBuyButton/titleLabel"
+        case ourHistoryButtonTitle = "moreUIVC/ourHistoryButton/titleLabel"
+        case recipesButtonTitle = "moreUIVC/recipesButton/titleLabel"
+        case findYourStoreButtonTitle = "moreUIVC/findYourStoreButton/titleLabel"
+        case billingButtonTitle = "moreUIVC/billingButton/titleLabel"
+        case whyFrozenButtonTitle = "moreUIVC/whyFrozenButton/titleLabel"
+        case grillometerButtonTitle = "moreUIVC/grillometerButton/titleLabel"
+        case qrScanButtonTitle = "moreUIVC/qrScanButton/titleLabel"
+        case balanceEnquiryButtonTitle = "moreUIVC/balanceEnquiryButton/titleLabel"
+        case frequentQuestionsButtonTitle = "moreUIVC/frequentQuestionsButton/titleLabel"
+        case jobBagButtonTitle = "moreUIVC/jobBagButton/titleLabel"
+        case privacyNoticeButtonTitle = "moreUIVC/privacyNoticeButton/titleLabel"
+        case versionLabelText = "moreUIVC/versionLabel/text"
+
+    }
+    
+    
+    //MARK: - Login UIVC Localised Text
+    enum LoginUIVC: String {
+        var localised: String {
+            return self.rawValue.localized
+        }
+        case titleLabeltext = "loginUIVC/titleLabel/text"
+        case emailTextFieldplaceholder = "loginUIVC/emailTextField/placeholder"
+        case emailTextFieldAlertLabelText = "loginUIVC/emailTextFieldAlertLabel/text"
+        case passwordTextFieldPlaceholder = "loginUIVC/passwordTextField/placeholder"
+        case forgotPasswordButtonTitle = "loginUIVC/forgotPasswordButton/titleLabel"
+        case createAccountButtonTitle = "loginUIVC/createAccountButton/titleLabel"
+        case loginButtonTitle = "loginUIVC/submitButton/titleLabel"
+        case showPasswordTextFieldButtonTitle = "loginUIVC/showPasswordTextFieldButton/titleLabel"
+        case hidePasswordTextFieldButtonTitle = "loginUIVC/hidePasswordTextFieldButton/titleLabel"
+        case passwordTextFieldAlertLabel = "loginUIVC/passwordTextFieldAlertLabel/text"
+    }
+    
+    enum ProductInfoUIVC: String {
+        var localised: String {
+            return self.rawValue.localized
+        }
+        case seeMoreButtonTitle = "productInfoUIVC/seeMoreButton/title"
     }
 }

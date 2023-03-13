@@ -41,6 +41,13 @@ class DisplayProductsCVC: UICollectionViewCell {
 
     }
     
+    func setupCellButton(font: UIFont, textColor: UIColor, bacgroundColor: UIColor, title: String) {
+        addProductToCartButton.setTitle(title, for: .normal)
+        addProductToCartButton.titleLabel?.textColor = textColor
+        addProductToCartButton.titleLabel?.font = font
+        addProductToCartButton.backgroundColor = bacgroundColor
+    }
+    
     func setupCell(product: ProductDetails) {
         
         setProductName(text: product.productName)

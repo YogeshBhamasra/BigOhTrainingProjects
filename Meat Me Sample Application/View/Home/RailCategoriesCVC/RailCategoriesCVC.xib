@@ -28,6 +28,7 @@
                         <rect key="frame" x="0.0" y="79" width="57" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="AH2-Au-kTU"/>
+                            <constraint firstAttribute="width" constant="57" id="t5E-KY-laz"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>

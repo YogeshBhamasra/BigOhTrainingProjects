@@ -44,10 +44,10 @@
                             <constraint firstAttribute="height" constant="186" id="Wzt-3D-cVq"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uU-39-95U">
-                        <rect key="frame" x="6" y="200" width="122" height="37"/>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uU-39-95U">
+                        <rect key="frame" x="6" y="192" width="122" height="45"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="37" id="ulP-m4-I7j"/>
+                            <constraint firstAttribute="height" constant="45" id="ulP-m4-I7j"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="Oswald-SemiBold" family="Oswald" pointSize="14"/>
                         <nil key="textColor"/>
@@ -62,17 +62,15 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZb-QN-FBm">
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZb-QN-FBm">
                         <rect key="frame" x="0.0" y="298" width="163" height="40"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="IlQ-dH-z71"/>
                         </constraints>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title="CAMBIAR CÓDIGO POSTAL">
-                            <fontDescription key="titleFontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="10"/>
-                        </buttonConfiguration>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="CAMBIAR CÓDIGO POSTAL"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.375 KG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyB-ar-df8">
                         <rect key="frame" x="6" y="257" width="55" height="15"/>
@@ -123,7 +121,6 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="8uU-39-95U" firstAttribute="top" secondItem="8nN-Lm-46L" secondAttribute="bottom" constant="14" id="1lX-IQ-2Pu"/>
                 <constraint firstItem="VTy-Sd-H3A" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3k9-MH-o73"/>
                 <constraint firstItem="8nN-Lm-46L" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="56g-d2-SKj"/>
                 <constraint firstItem="8uU-39-95U" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="5B4-yI-1Mm"/>
@@ -135,7 +132,6 @@
                 <constraint firstItem="nyB-ar-df8" firstAttribute="top" secondItem="zV8-9Z-1Db" secondAttribute="bottom" constant="6" id="L6f-NP-7eu"/>
                 <constraint firstAttribute="trailing" secondItem="zV8-9Z-1Db" secondAttribute="trailing" constant="53" id="X4B-sk-dVA"/>
                 <constraint firstItem="iL7-7e-d21" firstAttribute="top" secondItem="nyB-ar-df8" secondAttribute="bottom" constant="5" id="Ybr-ww-BN5"/>
-                <constraint firstItem="8uU-39-95U" firstAttribute="top" secondItem="VTy-Sd-H3A" secondAttribute="bottom" constant="14" id="Ymr-Ux-kGu"/>
                 <constraint firstAttribute="trailing" secondItem="8uU-39-95U" secondAttribute="trailing" constant="35" id="Z6Y-AO-XMJ"/>
                 <constraint firstAttribute="trailing" secondItem="8nN-Lm-46L" secondAttribute="trailing" id="acV-BM-k4o"/>
                 <constraint firstItem="VZb-QN-FBm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bgv-nq-dvF"/>

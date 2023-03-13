@@ -22,12 +22,12 @@ class HomeUIVC: NSObject, ObservableUIVC {
     }
     
     func setupUI() {
-        view.view.backgroundColor = .systemGray4
         setNavigationBarItems()
         setSearchBar()
         setChangeZipcodeButton()
         railCategoriesData()
         setTableView()
+        view.navigationController?.navigationBar.backgroundColor = .white
     }
 
  
@@ -60,7 +60,7 @@ class HomeUIVC: NSObject, ObservableUIVC {
         view.searchField.setFont(myFont: .getMontserratRegular(ofSize: 16))
         view.searchField.setKeyboardType(type: .webSearch)
         view.searchField.setPlaceholder(placeholderText: LocalisableString.HomeUIVC.searchBarPlaceholder.localised)
-        
+        view.searchField.setBackgroundColor(color: .mySurfaceBackground)
     }
     
     //MARK: - Setting Table View
@@ -74,7 +74,8 @@ class HomeUIVC: NSObject, ObservableUIVC {
         
         view.homeTableView.delegate = self
         view.homeTableView.dataSource = self
-//        view.homeTableView.rowHeight = UITableView.automaticDimension
+        
+        
     }
     
     
@@ -84,7 +85,8 @@ class HomeUIVC: NSObject, ObservableUIVC {
         
         view.changeZipcodeButton.contentHorizontalAlignment = .center
         view.changeZipcodeButton.contentVerticalAlignment = .center
-        
+        view.changeZipcodeButton.layer.borderWidth = 0.5
+        view.changeZipcodeButton.layer.borderColor = UIColor.black.withAlphaComponent(0.6).cgColor
         
         let title = LocalisableString.HomeUIVC.changeZipcodeTitle.localised
         
@@ -92,7 +94,7 @@ class HomeUIVC: NSObject, ObservableUIVC {
         let range = NSRange(location: 0, length: title.count)
         
         attributedString.addAttribute(.font, value: UIFont.getOswaldRegular(ofSize: 12), range: range)
-        attributedString.addAttribute(.foregroundColor, value: UIColor.black, range: range)
+        attributedString.addAttribute(.foregroundColor, value: UIColor.black.withAlphaComponent(0.78), range: range)
         
         view.changeZipcodeButton.setAttributedTitle(attributedString, for: .normal)
         
@@ -106,6 +108,7 @@ class HomeUIVC: NSObject, ObservableUIVC {
         
         trailingImageView.image = .dropdown_arrow
         trailingImageView.frame = CGRect(x: view.view.frame.width - 25, y: (view.changeZipcodeButton.bounds.height / 2) - 3, width: 17.5, height: 9.5)
+        trailingImageView.tintColor = .black
         trailingImageView.contentMode = .center
         trailingImageView.contentMode = .scaleAspectFill
         
@@ -179,7 +182,7 @@ extension HomeUIVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         if indexPath.section == 0 {
-            return CGFloat(88)
+            return CGFloat(110)
         } else if indexPath.section == 1 {
             return CGFloat(255)
         } else {
@@ -210,23 +213,27 @@ extension HomeUIVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
+        // Use HashMap
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: RailCollectionTVC.identifier) as? RailCollectionTVC
             guard let cell else { return RailCollectionTVC() }
             cell.setupCell(model: view.railCategories, imagesData: view.railImageData)
+            cell.backgroundColor = .mySurfaceBackground
             return cell
         } else if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: SlideImagesCollectionTVC.identifier) as? SlideImagesCollectionTVC
 
             guard let cell else { return SlideImagesCollectionTVC() }
             cell.setupCell(model: view.slideShowImagesData)
+            cell.backgroundColor = .mySurfaceBackground
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: ProductsCollectionTVC.identifier) as? ProductsCollectionTVC
 
             guard let cell else { return ProductsCollectionTVC() }
             cell.setupCell(model: view.productsData)
+            cell.delegate = self
+            cell.backgroundColor = .mySurfaceBackground
             return cell
         }
     }
@@ -234,3 +241,10 @@ extension HomeUIVC: UITableViewDataSource {
     
 }
 
+extension HomeUIVC: SelectedProductDelegate {
+    func didSelectProduct(data: ProductDetails) {
+        let vc = ProductInfoPageVC.instance(data: data)
+        view.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+}

@@ -18,7 +18,6 @@ class RailCategoriesCVC: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         // Initialization code
     }
     
@@ -36,6 +35,7 @@ class RailCategoriesCVC: UICollectionViewCell {
         imageView.image = image
         imageNameLabel.text = text
         imageNameLabel.font = font
+        imageNameLabel.numberOfLines = 2
         imageNameLabel.clipsToBounds = true
     }
 

@@ -32,11 +32,15 @@ class CustomSearchBar: UITextField,CustomSearchBarInterface {
         borderStyle = .none
         imageView.clipsToBounds = true
         imageView.contentMode = .scaleAspectFit
-        setImageFrame(frame: CGRect(x: 0, y: 0, width: 25, height: bounds.height))
+        setImageFrame(frame: CGRect(x: 15, y: 0, width: 25, height: bounds.height))
         placeholder = "Enter Text Here"
         font = .systemFont(ofSize: 14)
         addSubview(imageView)
         
+    }
+    
+    func setBackgroundColor(color: UIColor) {
+        backgroundColor = color
     }
     
     func setBorder(borderLayer: CALayer) {
@@ -45,7 +49,7 @@ class CustomSearchBar: UITextField,CustomSearchBarInterface {
     
     func setImage(image: UIImage?) {
         imageView.image = image
-        padding = imageView.frame.width + 2
+        padding = imageView.frame.width + imageView.frame.minX + 2
     }
     
     func setBorderColor(color: UIColor) {
@@ -80,17 +84,17 @@ class CustomSearchBar: UITextField,CustomSearchBarInterface {
 extension CustomSearchBar {
     
     override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        let rect = CGRect(x: padding, y: (bounds.maxY - bounds.minY) / 3.5, width: bounds.width, height: bounds.height)
+        let rect = CGRect(x: padding, y: 0, width: bounds.width, height: bounds.height)
         return rect
     }
     
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        let rect = CGRect(x: padding, y: (bounds.maxY - bounds.minY) / 3.5, width: bounds.width, height: bounds.height)
+        let rect = CGRect(x: padding, y: 0, width: bounds.width, height: bounds.height)
         return rect
     }
     
     override func textRect(forBounds bounds: CGRect) -> CGRect {
-        let rect = CGRect(x: padding, y: (bounds.maxY - bounds.minY) / 3.5, width: bounds.width, height: bounds.height)
+        let rect = CGRect(x: padding, y: 0, width: bounds.width, height: bounds.height)
         return rect
     }
 }

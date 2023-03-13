@@ -26,7 +26,7 @@ class SlideImagesCollectionTVC: UITableViewCell {
         
         promotionalImagesCollection.delegate = self
         promotionalImagesCollection.dataSource = self
-        promotionalImagesCollection.backgroundColor = .systemGray4
+        promotionalImagesCollection.backgroundColor = .clear
         
     }
 
@@ -38,7 +38,8 @@ class SlideImagesCollectionTVC: UITableViewCell {
     
     func setupPageControl(number: Int) {
         pageControl.numberOfPages = number
-        pageControl.backgroundColor = .systemBackground
+        pageControl.backgroundColor = .clear
+        pageControl.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
     }
     
     func setupCell(model: [UIImage]){

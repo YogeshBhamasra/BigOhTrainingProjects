@@ -109,6 +109,11 @@ class ZipCodeUIVC: NSObject, ObservableUIVC {
             view.zipcodeTextField.bottomLine.backgroundColor = UIColor.black.cgColor
             view.zipcodeTextField.alertLabel.textColor = .black
             debugPrint("If block called")
+            let tabBarVC = Storyboard.onboarding.instanceOf(viewController: TabBarVC.self)!
+            let nav = UINavigationController(rootViewController: tabBarVC)
+            AppDelegate.shared().window?.rootViewController = nav
+            AppDelegate.shared().window?.makeKeyAndVisible()
+            
         }
         else if view.store == nil
         {

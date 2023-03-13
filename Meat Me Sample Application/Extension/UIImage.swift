@@ -23,4 +23,31 @@ extension UIImage {
     static let dropdown_arrow = UIImage(named: "dropdown_arrow")
     static let search_icon = UIImage(named: "search_icon")
     
+    static let tabBarCart = UIImage(named: "tab_bar_cart")
+    static let tabBarShop = UIImage(named: "store")
+    static let tabBarAccount = UIImage(named: "account")
+    static let tabBarMore = UIImage(named: "more")
+    
+    
+    static let moreUIVCHistory = UIImage(named: "asterisk")
+    static let moreUIVCBuy = UIImage(named: "buy")
+    static let moreUIVCFAQ = UIImage(named: "frequently_asked")
+    static let moreUIVCFrozen = UIImage(named: "frozen")
+    static let moreUIVCbalanceEnquiry = UIImage(named: "gift_card")
+    static let moreUIVCGrill = UIImage(named: "grill")
+    static let moreUIVCInvoice = UIImage(named: "invoice")
+    static let moreUIVCJob = UIImage(named: "job")
+    static let moreUIVCRecipe = UIImage(named: "knife_and_fork")
+    static let moreUIVCPrivacy = UIImage(named: "privacy")
+    static let moreUIVCQR = UIImage(named: "qr_scan")
+    static let moreUIVCStore = UIImage(named: "store_locator")
+    
+    static let moreUIVCNext = UIImage(named: "next")
+    
+    static let avatar = UIImage(named: "Avatar")
+    static let dislike = UIImage(named: "dislike")
+    static let like = UIImage(named: "like")
+    static let share = UIImage(named: "share")
+    
+    static let foodDecorated = UIImage(named: "foodHerbs")
 }

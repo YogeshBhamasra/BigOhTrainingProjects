@@ -8,9 +8,10 @@
 import UIKit
 
 class CustomTextField: UITextField {
-//    var titleLabel = UILabel()
+
     var maxLength = 0
-    var padding: CGFloat = 0
+    var leftPadding: CGFloat = 0
+    var rightPadding: CGFloat = 0
     var bottomLine = CALayer()
     var alertLabel = UILabel()
     
@@ -33,9 +34,7 @@ class CustomTextField: UITextField {
         borderStyle = .none
         
         bottomLine.frame = CGRect(x: 0, y: Int(frame.size.height) - 2, width: Int(frame.size.width), height: 1)
-        alertLabel.frame = CGRect(x: 0, y: Int(frame.size.height) + 10, width: Int(frame.size.width), height: 25)
-//        titleLabel.frame = CGRect(x: 0, y: 0, width: Int(frame.size.width), height: 15)
-//        titleLabel.clipsToBounds = true
+        alertLabel.frame = CGRect(x: 0, y: Int(frame.size.height), width: Int(frame.size.width), height: 25)
         alertLabel.clipsToBounds = true
         
         bottomLine.backgroundColor = UIColor.lightGray.cgColor
@@ -43,7 +42,6 @@ class CustomTextField: UITextField {
         font = .getOswaldRegular(ofSize: 16)
         
         layer.addSublayer(bottomLine)
-//        addSubview(titleLabel)
         addSubview(alertLabel)
         keyboardType = .numberPad
     }
@@ -61,9 +59,6 @@ class CustomTextField: UITextField {
         font = myFont
     }
     
-//    func setTitleLabel(title: String) {
-//        titleLabel.text = title
-//    }
     
     func setPlaceholder(placeholderText: String) {
         placeholder = placeholderText
@@ -74,29 +69,34 @@ class CustomTextField: UITextField {
     }
     
     func setPadding(paddingValue: CGFloat) {
-        padding = paddingValue
+        leftPadding = paddingValue
+    }
+    
+    func setAlertLabelFont(font: UIFont) {
+        alertLabel.font = font
     }
     
     func showError() {
         bottomLine.backgroundColor = UIColor.red.cgColor
         
     }
-}
-
-extension CustomTextField {
+    
+    func setRightPadding(padding: CGFloat) {
+        rightPadding = padding
+    }
     
     override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        let rect = CGRect(x: padding, y: 0, width: bounds.width, height: bounds.height)
+        let rect = CGRect(x: leftPadding, y: 0, width: bounds.width - rightPadding, height: bounds.height)
         return rect
     }
     
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        let rect = CGRect(x: padding, y: 0, width: bounds.width, height: bounds.height)
+        let rect = CGRect(x: leftPadding, y: 0, width: bounds.width - rightPadding, height: bounds.height)
         return rect
     }
     
     override func textRect(forBounds bounds: CGRect) -> CGRect {
-        let rect = CGRect(x: padding, y: 0, width: bounds.width, height: bounds.height)
+        let rect = CGRect(x: leftPadding, y: 0, width: bounds.width - rightPadding, height: bounds.height)
         return rect
     }
 }

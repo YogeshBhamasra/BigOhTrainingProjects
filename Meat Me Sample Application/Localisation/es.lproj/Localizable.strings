@@ -45,3 +45,42 @@
 //MARK: - ProductsCollectionTVC Texts
 "productsCollectionTVC/seeMoreButton/titleLabel" = "VER MÁS";
 "productsCollectionTVC/productLabel/Text" = "DESCONGELA SÓLO LO QUE NECESITAS";
+"productsCollectionTVC/addToCartButton/Title1" = "CAMBIAR CÓDIGO POSTAL";
+"productsCollectionTVC/addToCartButton/Title2" = "AÑADIR AL CARRITO";
+
+//MARK: - Tab Bar VC Texts
+"tabBarVC/shopBarButton/titleLabel" = "Tienda";
+"tabBarVC/cartBarButton/titleLabel" = "Reordenar";
+"tabBarVC/accountBarButton/titleLabel" = "Cuenta";
+"tabBarVC/moreBarButton/titleLabel" = "Más";
+
+
+//MARK: - More UIVC Text
+"moreUIVC/howToBuyButton/titleLabel" = "CÓMO comprar";
+"moreUIVC/ourHistoryButton/titleLabel" = "NUESTRA HISTORIA";
+"moreUIVC/recipesButton/titleLabel" = "RECETAS";
+"moreUIVC/findYourStoreButton/titleLabel" = "ENCUENTRA TU TIENDA";
+"moreUIVC/billingButton/titleLabel" = "FACTURACIÓN";
+"moreUIVC/whyFrozenButton/titleLabel" = "POR QUÉ CONGELADO";
+"moreUIVC/grillometerButton/titleLabel" = "PARRILLÓMETRO";
+"moreUIVC/qrScanButton/titleLabel" = "ESCANEO QR";
+"moreUIVC/balanceEnquiryButton/titleLabel" = "CONSULTA DE SALDO";
+"moreUIVC/frequentQuestionsButton/titleLabel" = "PREGUNTAS FRECUENTES";
+"moreUIVC/jobBagButton/titleLabel" = "bolsa de trabajo";
+"moreUIVC/privacyNoticeButton/titleLabel" = "AVISO DE PRIVACIDAD";
+"moreUIVC/versionLabel/text" = "Versión 1.0.68";
+
+//MARK: - Login UIVC Text
+"loginUIVC/titleLabel/text" = "INICIAR SESIÓN";
+"loginUIVC/emailTextField/placeholder" = "Ingresa tu correo";
+"loginUIVC/emailTextFieldAlertLabel/text" = "Ingresa tu correo";
+"loginUIVC/passwordTextField/placeholder" = "Contraseña";
+"loginUIVC/forgotPasswordButton/titleLabel" = "¿Olvidaste tu contraseña?";
+"loginUIVC/createAccountButton/titleLabel" = "¿Aún no tienes cuenta? Crea tu cuenta aquí";
+"loginUIVC/submitButton/titleLabel" = "INGRESAR";
+"loginUIVC/showPasswordTextFieldButton/titleLabel" = "Mostrar";
+"loginUIVC/hidePasswordTextFieldButton/titleLabel" = "Esconder";
+"loginUIVC/passwordTextFieldAlertLabel/text" = "Ingresa una contraseña válida";
+
+//MARK: - ProductInfo UIVC Screen
+"productInfoUIVC/seeMoreButton/title" = "LEE MÁS";
