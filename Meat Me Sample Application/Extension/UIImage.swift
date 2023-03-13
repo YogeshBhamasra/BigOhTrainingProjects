@@ -50,4 +50,6 @@ extension UIImage {
     static let share = UIImage(named: "share")
     
     static let foodDecorated = UIImage(named: "foodHerbs")
+    static let star = UIImage(named: "star")
+    static let starFilled = UIImage(named: "starFill")
 }

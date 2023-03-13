@@ -35,7 +35,6 @@
 		A63F74DB29A8DFC6008EAD81 /* ZipCodeUIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F74DA29A8DFC6008EAD81 /* ZipCodeUIVC.swift */; };
 		A63F74DD29A8DFE2008EAD81 /* ZipCodeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F74DC29A8DFE2008EAD81 /* ZipCodeVM.swift */; };
 		A65B65CC29B20A97004D1CB6 /* DisplayProductsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B65CA29B20A96004D1CB6 /* DisplayProductsCVC.swift */; };
-		A65B65CD29B20A97004D1CB6 /* DisplayProductsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A65B65CB29B20A96004D1CB6 /* DisplayProductsCVC.xib */; };
 		A65B65D029B220B1004D1CB6 /* HomeProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B65CF29B220B1004D1CB6 /* HomeProductsModel.swift */; };
 		A65C59B929BB36C200964114 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65C59B829BB36C200964114 /* UIColor.swift */; };
 		A65CA55629BDBE750000473F /* ProductImagesCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65CA55429BDBE750000473F /* ProductImagesCVC.swift */; };
@@ -78,6 +77,7 @@
 		A6A75D0C29BCE28C00AB7438 /* SeeReviewsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A75D0A29BCE28C00AB7438 /* SeeReviewsTVC.xib */; };
 		A6A75D0F29BCE2A400AB7438 /* EnterReviewTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A75D0D29BCE2A400AB7438 /* EnterReviewTVC.swift */; };
 		A6A75D1029BCE2A400AB7438 /* EnterReviewTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A75D0E29BCE2A400AB7438 /* EnterReviewTVC.xib */; };
+		A6A9AF4729BF469D007CEF81 /* DisplayProductsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A9AF4629BF469D007CEF81 /* DisplayProductsCVC.xib */; };
 		A6B0EF0429B75FE800022B4D /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B0EF0329B75FE800022B4D /* TabBarVC.swift */; };
 		A6B0EF0B29B76C4600022B4D /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B0EF0A29B76C4600022B4D /* MoreVC.swift */; };
 		A6B0EF0D29B76C5C00022B4D /* MoreUIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B0EF0C29B76C5C00022B4D /* MoreUIVC.swift */; };
@@ -180,7 +180,6 @@
 		A63F74DA29A8DFC6008EAD81 /* ZipCodeUIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ZipCodeUIVC.swift; path = "../../../../../../../../../../../Yogesh's T7/Users/yogeshrao/Desktop/Yogesh's T7/BIG_OH_Swift/Meat Me Sample Application/Meat Me Sample Application/View/ZipCode/ZipCodeUIVC/ZipCodeUIVC.swift"; sourceTree = "<group>"; };
 		A63F74DC29A8DFE2008EAD81 /* ZipCodeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ZipCodeVM.swift; path = "../../../../../../../../../../../Yogesh's T7/Users/yogeshrao/Desktop/Yogesh's T7/BIG_OH_Swift/Meat Me Sample Application/Meat Me Sample Application/View/ZipCode/ZipCodeVM/ZipCodeVM.swift"; sourceTree = "<group>"; };
 		A65B65CA29B20A96004D1CB6 /* DisplayProductsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DisplayProductsCVC.swift; path = "../../../../../../../../../../../Yogesh's T7/Users/yogeshrao/Desktop/Yogesh's T7/BIG_OH_Swift/Meat Me Sample Application/Meat Me Sample Application/View/Home/DisplayProductsCVC/DisplayProductsCVC.swift"; sourceTree = "<group>"; };
-		A65B65CB29B20A96004D1CB6 /* DisplayProductsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DisplayProductsCVC.xib; path = "../../../../../../../../../../../Yogesh's T7/Users/yogeshrao/Desktop/Yogesh's T7/BIG_OH_Swift/Meat Me Sample Application/Meat Me Sample Application/View/Home/DisplayProductsCVC/DisplayProductsCVC.xib"; sourceTree = "<group>"; };
 		A65B65CF29B220B1004D1CB6 /* HomeProductsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeProductsModel.swift; path = "../../../../../../../../../../Yogesh's T7/Users/yogeshrao/Desktop/Yogesh's T7/BIG_OH_Swift/Meat Me Sample Application/Meat Me Sample Application/Networking/Model/HomeProductsModel.swift"; sourceTree = "<group>"; };
 		A65C59B829BB36C200964114 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = "../../../../../../../../../Yogesh's T7/Users/yogeshrao/Desktop/Yogesh's T7/BIG_OH_Swift/Meat Me Sample Application/Meat Me Sample Application/Extension/UIColor.swift"; sourceTree = "<group>"; };
 		A65CA55429BDBE750000473F /* ProductImagesCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductImagesCVC.swift; path = "../../../../../../../../../../../../../Yogesh's T7/Users/yogeshrao/Desktop/Yogesh's T7/BIG_OH_Swift/Meat Me Sample Application/Meat Me Sample Application/View/ProductsDisplayPages/ProductInformationPage/ProductImagesTVC/ProductImagesCVC/ProductImagesCVC.swift"; sourceTree = "<group>"; };
@@ -226,6 +225,7 @@
 		A6A75D0A29BCE28C00AB7438 /* SeeReviewsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SeeReviewsTVC.xib; path = "../../../../../../../../../../../../../Yogesh's T7/Users/yogeshrao/Desktop/Yogesh's T7/BIG_OH_Swift/Meat Me Sample Application/Meat Me Sample Application/View/ProductsDisplayPages/ProductInformationPage/ReviewsTVC/SeeReviewsTVC/SeeReviewsTVC.xib"; sourceTree = "<group>"; };
 		A6A75D0D29BCE2A400AB7438 /* EnterReviewTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EnterReviewTVC.swift; path = "../../../../../../../../../../../../../Yogesh's T7/Users/yogeshrao/Desktop/Yogesh's T7/BIG_OH_Swift/Meat Me Sample Application/Meat Me Sample Application/View/ProductsDisplayPages/ProductInformationPage/ReviewsTVC/EnterReviewTVC/EnterReviewTVC.swift"; sourceTree = "<group>"; };
 		A6A75D0E29BCE2A400AB7438 /* EnterReviewTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = EnterReviewTVC.xib; path = "../../../../../../../../../../../../../Yogesh's T7/Users/yogeshrao/Desktop/Yogesh's T7/BIG_OH_Swift/Meat Me Sample Application/Meat Me Sample Application/View/ProductsDisplayPages/ProductInformationPage/ReviewsTVC/EnterReviewTVC/EnterReviewTVC.xib"; sourceTree = "<group>"; };
+		A6A9AF4629BF469D007CEF81 /* DisplayProductsCVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisplayProductsCVC.xib; sourceTree = "<group>"; };
 		A6B0EF0329B75FE800022B4D /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarVC.swift; path = "../../../../../../../../../../Yogesh's T7/Users/yogeshrao/Desktop/Yogesh's T7/BIG_OH_Swift/Meat Me Sample Application/Meat Me Sample Application/View/TabBarVC/TabBarVC.swift"; sourceTree = "<group>"; };
 		A6B0EF0A29B76C4600022B4D /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MoreVC.swift; path = "../../../../../../../../../../../Yogesh's T7/Users/yogeshrao/Desktop/Yogesh's T7/BIG_OH_Swift/Meat Me Sample Application/Meat Me Sample Application/View/More/MoreVC/MoreVC.swift"; sourceTree = "<group>"; };
 		A6B0EF0C29B76C5C00022B4D /* MoreUIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MoreUIVC.swift; path = "../../../../../../../../../../../Yogesh's T7/Users/yogeshrao/Desktop/Yogesh's T7/BIG_OH_Swift/Meat Me Sample Application/Meat Me Sample Application/View/More/MoreUIVC/MoreUIVC.swift"; sourceTree = "<group>"; };
@@ -576,8 +576,8 @@
 		A65B65C929B20A56004D1CB6 /* DisplayProductsCVC */ = {
 			isa = PBXGroup;
 			children = (
+				A6A9AF4629BF469D007CEF81 /* DisplayProductsCVC.xib */,
 				A65B65CA29B20A96004D1CB6 /* DisplayProductsCVC.swift */,
-				A65B65CB29B20A96004D1CB6 /* DisplayProductsCVC.xib */,
 			);
 			path = DisplayProductsCVC;
 			sourceTree = "<group>";
@@ -1170,8 +1170,8 @@
 				A626F48629A63AC800DE0D62 /* Splash.storyboard in Resources */,
 				A629EE5629A8975E00E97FA7 /* Oswald-Regular.ttf in Resources */,
 				A6BB967E29A735AE00A61141 /* Montserrat-Bold.ttf in Resources */,
+				A6A9AF4729BF469D007CEF81 /* DisplayProductsCVC.xib in Resources */,
 				A689A44929B5ACB800F615AE /* ProductsCollectionTVC.xib in Resources */,
-				A65B65CD29B20A97004D1CB6 /* DisplayProductsCVC.xib in Resources */,
 				A6BB967B29A735AE00A61141 /* Montserrat-ThinItalic.ttf in Resources */,
 				A6A75D0C29BCE28C00AB7438 /* SeeReviewsTVC.xib in Resources */,
 				A689A44D29B5ACD800F615AE /* SlideImagesCollectionTVC.xib in Resources */,

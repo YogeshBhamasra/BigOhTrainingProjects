@@ -7,6 +7,7 @@ target 'Meat Me Sample Application' do
   # Pods for Meat Me Sample Application
   pod 'IQKeyboardManagerSwift'
   pod 'Moya'
+  pod 'Cosmos'
   target 'Meat Me Sample ApplicationTests' do
     inherit! :search_paths
     # Pods for testing

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Cosmos
 
 class ProductPriceTVC: UITableViewCell {
     static let identifier = "ProductPriceTVC"
@@ -14,7 +15,7 @@ class ProductPriceTVC: UITableViewCell {
     }
 
     @IBOutlet weak var productNameLabel: UILabel!
-    @IBOutlet weak var rating: UILabel!
+    @IBOutlet weak var ratingView: CosmosView!
     @IBOutlet weak var productWeightLabel: UILabel!
     @IBOutlet weak var numberOfPieces: UILabel!
     @IBOutlet weak var productPrice: UILabel!
@@ -53,6 +54,8 @@ class ProductPriceTVC: UITableViewCell {
         productWeightLabel.font = .getMontserratRegular(ofSize: 16)
         numberOfPieces.font = .getMontserratMediumItalic(ofSize: 14)
         
+        setupRating(rating: 5)
+        
     }
     func setProductName(text: String?) {
         productNameLabel.text = text
@@ -72,5 +75,14 @@ class ProductPriceTVC: UITableViewCell {
     
     func setProductPricePerKG(text: String?) {
         productPricePerKG.text = text
+    }
+    
+    func setupRating(rating: Double) {
+        ratingView.settings.fillMode = .precise
+        ratingView.settings.filledImage = .starFilled
+        ratingView.settings.emptyImage = .star
+        ratingView.settings.updateOnTouch = true
+        ratingView.settings.starSize = 15
+        ratingView.rating = rating
     }
 }

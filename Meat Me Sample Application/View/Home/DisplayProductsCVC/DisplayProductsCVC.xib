@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="Montserrat-Bold.ttf">
             <string>Montserrat-Bold</string>
-        </array>
-        <array key="Montserrat-Light.ttf">
-            <string>Montserrat-Light</string>
         </array>
         <array key="Montserrat-MediumItalic.ttf">
             <string>Montserrat-MediumItalic</string>
@@ -23,7 +21,7 @@
         <array key="Montserrat-SemiBold.ttf">
             <string>Montserrat-SemiBold</string>
         </array>
-        <array key="Oswald-SemiBold.ttf">
+        <array key="Oswald-VariableFont_wght.ttf">
             <string>Oswald-SemiBold</string>
         </array>
     </customFonts>
@@ -50,15 +48,6 @@
                             <constraint firstAttribute="height" constant="45" id="ulP-m4-I7j"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="Oswald-SemiBold" family="Oswald" pointSize="14"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating (0)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zV8-9Z-1Db">
-                        <rect key="frame" x="6" y="237" width="104" height="14"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="14" id="sLO-tX-5jm"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="10"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -117,6 +106,10 @@
                             <constraint firstAttribute="height" constant="18" id="sDb-OX-ZBe"/>
                         </constraints>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHR-GE-1Gh" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="6" y="243" width="101" height="8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -124,28 +117,29 @@
                 <constraint firstItem="VTy-Sd-H3A" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3k9-MH-o73"/>
                 <constraint firstItem="8nN-Lm-46L" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="56g-d2-SKj"/>
                 <constraint firstItem="8uU-39-95U" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="5B4-yI-1Mm"/>
-                <constraint firstItem="g3V-cJ-1IP" firstAttribute="top" secondItem="zV8-9Z-1Db" secondAttribute="bottom" constant="6" id="AVY-oU-QJw"/>
                 <constraint firstItem="g3V-cJ-1IP" firstAttribute="leading" secondItem="nyB-ar-df8" secondAttribute="trailing" constant="56" id="AjH-Je-ydp"/>
+                <constraint firstItem="wHR-GE-1Gh" firstAttribute="top" secondItem="8uU-39-95U" secondAttribute="bottom" constant="6" id="AtW-gU-WIp"/>
+                <constraint firstAttribute="trailing" secondItem="wHR-GE-1Gh" secondAttribute="trailing" constant="56" id="Cgq-yh-CRQ"/>
                 <constraint firstItem="apB-Gx-T67" firstAttribute="leading" secondItem="iL7-7e-d21" secondAttribute="trailing" constant="53" id="Den-zW-SdP"/>
                 <constraint firstItem="iL7-7e-d21" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="Kja-jr-97V"/>
                 <constraint firstAttribute="trailing" secondItem="apB-Gx-T67" secondAttribute="trailing" constant="6" id="L6e-bl-MFw"/>
-                <constraint firstItem="nyB-ar-df8" firstAttribute="top" secondItem="zV8-9Z-1Db" secondAttribute="bottom" constant="6" id="L6f-NP-7eu"/>
-                <constraint firstAttribute="trailing" secondItem="zV8-9Z-1Db" secondAttribute="trailing" constant="53" id="X4B-sk-dVA"/>
                 <constraint firstItem="iL7-7e-d21" firstAttribute="top" secondItem="nyB-ar-df8" secondAttribute="bottom" constant="5" id="Ybr-ww-BN5"/>
+                <constraint firstItem="g3V-cJ-1IP" firstAttribute="top" secondItem="8uU-39-95U" secondAttribute="bottom" constant="20" id="Yjy-Fn-ktm"/>
                 <constraint firstAttribute="trailing" secondItem="8uU-39-95U" secondAttribute="trailing" constant="35" id="Z6Y-AO-XMJ"/>
                 <constraint firstAttribute="trailing" secondItem="8nN-Lm-46L" secondAttribute="trailing" id="acV-BM-k4o"/>
                 <constraint firstItem="VZb-QN-FBm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bgv-nq-dvF"/>
+                <constraint firstItem="g3V-cJ-1IP" firstAttribute="top" secondItem="nyB-ar-df8" secondAttribute="top" id="ceu-oe-nRl"/>
                 <constraint firstAttribute="trailing" secondItem="g3V-cJ-1IP" secondAttribute="trailing" constant="6" id="fZ2-5w-Bng"/>
                 <constraint firstItem="nyB-ar-df8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="fyE-P2-9LJ"/>
                 <constraint firstItem="8nN-Lm-46L" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="j77-ao-3G6"/>
                 <constraint firstItem="VTy-Sd-H3A" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="168" id="jeS-Jq-dvC"/>
+                <constraint firstItem="nyB-ar-df8" firstAttribute="top" secondItem="wHR-GE-1Gh" secondAttribute="bottom" constant="6" id="jzK-XE-dBd"/>
                 <constraint firstAttribute="bottom" secondItem="VZb-QN-FBm" secondAttribute="bottom" id="o7v-NI-yDX"/>
                 <constraint firstAttribute="trailing" secondItem="VZb-QN-FBm" secondAttribute="trailing" id="pkH-Xn-BqN"/>
                 <constraint firstAttribute="trailing" secondItem="VTy-Sd-H3A" secondAttribute="trailing" constant="57" id="qQw-n3-Z6H"/>
                 <constraint firstItem="VZb-QN-FBm" firstAttribute="top" secondItem="iL7-7e-d21" secondAttribute="bottom" constant="2" id="qYL-ex-kel"/>
-                <constraint firstItem="zV8-9Z-1Db" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="tEf-M2-xPo"/>
+                <constraint firstItem="wHR-GE-1Gh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="vDr-96-hXU"/>
                 <constraint firstItem="apB-Gx-T67" firstAttribute="top" secondItem="g3V-cJ-1IP" secondAttribute="bottom" constant="1" id="w84-O2-5jO"/>
-                <constraint firstItem="zV8-9Z-1Db" firstAttribute="top" secondItem="8uU-39-95U" secondAttribute="bottom" id="ySb-am-ayq"/>
             </constraints>
             <size key="customSize" width="163" height="338"/>
             <connections>
@@ -157,12 +151,15 @@
                 <outlet property="productPrice" destination="iL7-7e-d21" id="Em0-r9-ZYu"/>
                 <outlet property="productPricePerKG" destination="apB-Gx-T67" id="JV6-oJ-Y2P"/>
                 <outlet property="productWeightLabel" destination="nyB-ar-df8" id="43H-eh-I2j"/>
-                <outlet property="rating" destination="zV8-9Z-1Db" id="NWj-2f-eEN"/>
+                <outlet property="ratingView" destination="wHR-GE-1Gh" id="UXc-KC-QKa"/>
             </connections>
             <point key="canvasLocation" x="206.87022900763358" y="-248.59154929577466"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="Previously Ordered" width="106" height="18"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

@@ -72,7 +72,7 @@ extension ProductInfoUIVC: UITableViewDelegate {
         if indexPath.section == 0 {
             return CGFloat(400)
         } else if indexPath.section == 1 {
-            return CGFloat(254)
+            return CGFloat(290)
         } else if indexPath.section == 2 {
             return CGFloat(370)
         } else if indexPath.section == 3 {
